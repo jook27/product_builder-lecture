@@ -19,27 +19,68 @@ body.dark-mode {
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  padding: 80px 20px 40px;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
 }
 
 .container {
+  width: 100%;
+  max-width: 500px;
   text-align: center;
   background: var(--container-bg);
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px var(--shadow-color);
   transition: background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
 }
 
-h1 {
+h1, h2 {
   color: var(--text-color);
   margin-bottom: 2rem;
+}
+
+.partnership-container {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--number-bg);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form button {
+  width: 100%;
 }
 
 .numbers-container {
