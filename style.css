@@ -1,3 +1,21 @@
+:root {
+  --bg-color: #f4f4f9;
+  --container-bg: white;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --number-bg: #eee;
+  --button-bg: #3498db;
+  --button-hover: #2980b9;
+}
+
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --container-bg: #2d2d2d;
+  --text-color: #f4f4f9;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --number-bg: #444;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -5,19 +23,22 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f9;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
   text-align: center;
-  background: white;
+  background: var(--container-bg);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 h1 {
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 2rem;
 }
 
@@ -33,8 +54,8 @@ h1 {
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background-color: #eee;
-  color: #333;
+  background-color: var(--number-bg);
+  color: var(--text-color);
   font-weight: bold;
   font-size: 1.2rem;
   display: inline-block;
@@ -49,18 +70,32 @@ h1 {
 button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #3498db;
+  background-color: var(--button-bg);
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: var(--button-hover);
 }
 
 button:active {
   transform: translateY(2px);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#theme-btn {
+  background: none;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 20px;
 }
