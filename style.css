@@ -1,1 +1,66 @@
-/* Add styles here */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.numbers-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.number.active {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  transform: translateY(2px);
+}
