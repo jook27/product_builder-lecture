@@ -1,17 +1,26 @@
-# Project Blueprint: Lotto Number Generator
+# Project Blueprint: Lotto Number Generator (AdSense Optimized)
 
 ## Overview
-A simple, modern web application that generates random lotto numbers. It features a responsive design, dark/light mode toggle, partnership inquiry form, Disqus comment system, and Google AdSense integration.
+A high-quality, professional web application providing a random lotto number generator alongside valuable information about lottery odds and responsible gaming. Optimized for Google AdSense approval through rich content, clear navigation, and mandatory legal disclosures.
 
 ## Current Features
-- Random lotto number generation (1-45).
-- Color-coded lotto balls based on number range.
-- Dark and Light mode toggle with persistence using `localStorage`.
-- Partnership inquiry form powered by Formspree.
-- Comment system powered by Disqus.
-- **Google AdSense integration** for monetization.
+- Random lotto number generation (1-45) with color-coded balls.
+- Dark and Light mode toggle with persistence.
+- Partnership inquiry form (Formspree).
+- Comment system (Disqus).
+- Google AdSense integration (Meta tag, Script, ads.txt).
 
-## Planned Changes: Google AdSense Integration
-- Add the Google AdSense meta tag to the `<head>` of `index.html` for account verification.
-- Add the AdSense auto-ads script to the `<head>` of `index.html`.
-- Create an `ads.txt` file in the root directory for authorized digital sellers verification.
+## Planned Changes: AdSense Optimization & High-Quality Site Improvements
+- **Content Expansion**: Add detailed sections on the main page explaining "How to use", "Understanding Lotto Odds", and "Responsible Gaming Tips".
+- **Mandatory Pages**:
+    - `privacy.html`: Comprehensive Privacy Policy disclosing AdSense cookie usage.
+    - `about.html`: Information about the site's purpose and the creator.
+    - `terms.html`: Basic Terms of Service for users.
+- **Navigation & Structure**:
+    - Implement a consistent header with links to all pages.
+    - Implement a footer with legal links and copyright info.
+- **SEO & UX**:
+    - Add meaningful meta descriptions and structured data (Schema.org).
+    - Ensure all images/icons have alt text.
+    - Optimize for mobile responsiveness and fast loading.
+- **Design Polish**: Use premium styling, subtle textures, and balanced layouts as per the GEMINI.md guidelines.
