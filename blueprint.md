@@ -9,6 +9,7 @@ A high-quality, professional web application providing a random lotto number gen
 - Partnership inquiry form (Formspree).
 - Comment system (Disqus).
 - Google AdSense integration (Meta tag, Script, ads.txt).
+- Microsoft Clarity integration (Tracking script).
 
 ## Planned Changes: AdSense Optimization & High-Quality Site Improvements
 - **Content Expansion**: Add detailed sections on the main page explaining "How to use", "Understanding Lotto Odds", and "Responsible Gaming Tips".
